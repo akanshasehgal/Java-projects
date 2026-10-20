@@ -1,6 +1,6 @@
 # Java Projects – Advanced Java Lab
 
-Source code and documentation for the **Advanced Java Lab** experiments.
+Source code and documentation for the **Advanced Java Lab** experiments and the **ShopSphere** project.
 Every experiment has its own folder containing the Java source files, a README with run
 instructions and expected output, and the lab record (`Lab-Record.pdf`).
 
@@ -18,10 +18,25 @@ instructions and expected output, and the lab record (`Lab-Record.pdf`).
 | 5 | RMI – Remote Method Invocation | [Experiment-5-RMI-Remote-Method-Invocation](Experiment-5-RMI-Remote-Method-Invocation) | Remote interface, RMI Registry, stub |
 | 6 | Java Servlet | [Experiment-6-Java-Servlet](Experiment-6-Java-Servlet) | Servlet life cycle, session, filters, listeners |
 
+## Project – ShopSphere (E-Commerce Management System)
+
+**Folder:** [ShopSphere](ShopSphere)
+
+A complete online shopping system that brings the whole Advanced Java syllabus together in one application:
+
+- **Web store** (Servlet + JSP + JSTL on Tomcat 11): registration/login, product search and filters, cart,
+  wishlist, coupons, checkout with mock payment, order tracking, reviews, English/Hindi interface
+- **Admin panel** (web) and **Swing desktop admin**: dashboard, products, categories, inventory, orders, customers, coupons
+- **MySQL + JDBC** with a DAO and service layer (N-tier MVC architecture)
+- **Socket** inventory server/client using **serialization**, and a remote **RMI** inventory service
+- Demonstrations of **JNDI**, **JSTL XML/SQL**, the **Servlet life cycle**, **JSP elements**, **tag files** and a **custom tag handler**
+
+See the [ShopSphere README](ShopSphere/README.md) for setup steps, sample logins and the full syllabus mapping.
+
 ## Software Needed
 - **JDK 17 or newer** – every experiment
 - **MySQL Server** and **MySQL Connector/J** – Experiment 3
-- **Apache Maven** and **Apache Tomcat 11** – Experiment 6
+- **Apache Maven** and **Apache Tomcat 11** – Experiment 6 and the ShopSphere project
 
 ## Running an Experiment
 Open a terminal in the experiment's folder, then compile and run:

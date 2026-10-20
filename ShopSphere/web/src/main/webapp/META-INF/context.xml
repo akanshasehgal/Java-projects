@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Tomcat context configuration.
+    Defines the JNDI DataSource "jdbc/ShopSphereDB" (a pooled connection) used by
+    the JNDI demo (/demo/jndi) and the JSTL SQL demo (/demo/jstl-sql.jsp).
+    Change username/password to match your MySQL installation.
+-->
+<Context>
+    <Resource name="jdbc/ShopSphereDB"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/shopsphere?useSSL=false&amp;allowPublicKeyRetrieval=true"
+              username="root"
+              password="root"
+              maxTotal="10"
+              maxIdle="5"
+              maxWaitMillis="5000"/>
+</Context>
